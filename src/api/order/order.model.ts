@@ -44,13 +44,6 @@ export const CheckoutSchema = z.object({
   }),
 });
 
-// Input Validation for 'POST /admin/generate-discount' endpoint
-export const GenerateDiscountSchema = z.object({
-  body: z.object({
-    code: z.string(),
-  }),
-});
-
 // Input Validation for 'GET admin/stats' endpoint
 export const GetStatsSchema = z.object({
   itemsPurchased: z.number(),
